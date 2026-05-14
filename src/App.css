@@ -1,0 +1,117 @@
+.ticket-card{
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+  margin: 20px;
+}
+
+.ticket-card h2{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #222;
+  color: white;
+}
+
+.nav-links{
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.nav-links a{
+  text-decoration: none;
+  color: white;
+}
+
+.auth-buttons{
+  display: flex;
+  gap: 10px;
+}
+
+.auth-buttons button{
+  padding: 8px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+.home-content{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.form-container{
+  width: 400px;
+  margin: 80px auto;
+  padding: 30px;
+  background-color: white;
+  box-shadow: 0px 0px 10px lightgray;
+  border-radius: 10px;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form input{
+  padding: 10px;
+}
+
+.form button{
+  padding: 10px;
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+table {
+
+  width: 90%;
+
+  margin: 20px auto;
+
+  border-collapse: collapse;
+
+}
+
+th,
+td {
+
+  border: 1px solid black;
+
+  padding: 12px;
+
+  text-align: center;
+
+}
+
+th {
+
+  background-color: #222;
+
+  color: white;
+
+}
+
+select {
+
+  padding: 5px;
+
+}
+
+h1 {
+
+  text-align: center;
+
+}
