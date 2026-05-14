@@ -1,16 +1,113 @@
-# React + Vite
+# Ticket Management System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
 
-Currently, two official plugins are available:
+A MERN stack application used for managing tickets inside organizations.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Users can:
+- create tickets
+- assign tickets
+- update ticket status
+- track ticket progress
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Tech Stack
 
-## Expanding the ESLint configuration
+Frontend:
+- React.js
+- Axios
+- React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Backend:
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT Authentication
+
+---
+
+## User Roles
+
+### Requester
+- Create tickets
+- View own tickets
+
+### Admin
+- View all tickets
+- Assign tickets to team members
+
+### Team Member
+- View assigned tickets
+- Update ticket status
+
+---
+
+## Setup Instructions
+
+### Frontend
+
+cd tickect-management
+
+npm install
+
+npm run dev
+
+---
+
+### Backend
+
+cd backend
+
+npm install
+
+node server.js
+
+---
+
+## API Endpoints
+
+### Auth APIs
+
+POST /api/auth/register
+
+POST /api/auth/login
+
+GET /api/auth/team-members
+
+---
+
+### Ticket APIs
+
+POST /api/tickets/create
+
+GET /api/tickets/mytickets
+
+GET /api/tickets/all
+
+GET /api/tickets/assigned
+
+PUT /api/tickets/assign
+
+PUT /api/tickets/status
+
+---
+
+## Database
+
+Collections:
+- users
+- tickets
+
+---
+
+## Features
+
+- JWT Authentication
+- Role-based Access
+- Ticket Assignment
+- Status Tracking
+- Protected Routes
+
+---
